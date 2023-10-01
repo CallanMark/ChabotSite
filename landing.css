@@ -1,0 +1,196 @@
+/* Reset some default styles */
+body, h1, h2, a, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#img-header {
+    width: 120px; /* Adjust as per your logo's dimensions */
+}
+
+.button-header, .button-header-bold {
+    margin-left: 20px;
+    padding: 10px 20px;
+    color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button-header-bold {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.button-header:hover {
+    color: #333;
+    font-weight: bold;
+}
+
+main {
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+#tagLine {
+    font-size: 36px;
+    color: #007BFF;
+    margin-bottom: 40px;
+}
+
+#tagLine-2 {
+    font-size: 28px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+#startedFree {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+#startedFree:hover {
+    background-color: #0056b3;
+
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    background-color: #222;
+}
+
+#button-footer {
+    color: #bbb;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+#button-footer:hover {
+    color: #fff;
+}
+
+/* Slideshow Styling */
+
+.slider-section {
+    width: 100%;
+    max-width: 1300px;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+    overflow: hidden;
+    height: 500px;  /* Adjust this value as per your preference */
+}
+
+.slide {
+    display: none; /* By default, hide all slides */
+}
+
+.slide-image {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    height: 100%;
+}
+
+.slide-text {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for caption */
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.slide-dot-container {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.slide-dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active-dot, .slide-dot:hover {
+    background-color: #717171;
+}
+
+/* Navigation buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.menu-slider {
+    width: 80%; /* You can adjust this value as needed */
+    margin: 20px auto; /* This centers the menu slider and adds a little space between the slideshow and the menu slider */
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.menu-item {
+    display: inline-block;
+    /* Other menu item styles here */
+}

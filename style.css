@@ -1,0 +1,82 @@
+html {
+    height: 100%;
+    width: 100%;
+    background-color: #FAFAFA;
+    
+}
+
+.message__text {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px; /* Optional: for rounded corners */
+}
+
+.message.system {
+    background-color: #f4f4f4; /* Light gray background for system messages */
+}
+
+.message.user {
+    background-color: #e1f5fe; /* Light blue background for user messages */
+}
+
+.content {
+    padding: 5px;
+}
+#menu { 
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px;
+    background-color: #0077A3; 
+    align-items: flex-start;
+    justify-content: center;
+    align-self: center;
+}
+
+#message {
+    width: 80vw;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+    align-content: center;
+    background-color: #FAFAFA;
+    /* Optional: for rounded corners */
+}
+.message--sent{
+    background-color: #0077A3;/* User input */
+}
+.message--received { /* system response*/
+    background-color: #f1f1f1;
+}
+#input-box{
+    position: static;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 10px;
+}
+
+.button {
+    background-color: #0099CC;  /* A soft blue color */
+    color: white;               /* White text color */
+    padding: 10px 20px;         /* Padding around text */
+    border: none;               /* No border */
+    border-radius: 25px;        /* Rounded edges */
+    font-size: 16px;            /* Text size */
+    cursor: pointer;            /* Cursor changes to hand when hovering */
+    transition: 0.3s;           /* Smooth transition for hover effects */
+    text-decoration: none;      /* Removes underline if the button is a link */
+}
+
+.button:hover {
+    background-color: #0077A3;  /* Slightly darker blue for hover effect */
+}
+ul {
+margin-left: 20px;
+padding-left: 0;
+}
+
+li {
+margin-bottom: 8px;
+}
