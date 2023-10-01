@@ -5,8 +5,8 @@ const { Configuration, OpenAIApi } = require("openai");
 const { setupRoutes } = require('/Users/mark/GPT-Boilerplate/servercommon');
 
 const configuration = new Configuration({
-    organization: "org-7lR9sPnyk3JePp1GhazzuIFm",
-    apiKey: "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", // bio API key , Remove in github Repo
+    organization: "xxx", // Sensitive API key - Retracted
+    apiKey: "xxx, 
 });
 const openai = new OpenAIApi(configuration);
 
